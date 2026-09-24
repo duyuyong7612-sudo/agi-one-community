@@ -2,8 +2,8 @@
 
 Thanks for helping improve AGI-1 Community Controller.
 
-Contributions must stay inside `open-source-edition/` unless a maintainer explicitly
-approves a repository-wide change. Do not copy code, prompts, credentials, release
+Contributions must stay within this community repository's public scope unless a
+maintainer explicitly approves a broader change. Do not copy code, prompts, credentials, release
 configuration, or assets from the private AGI-1 product tree.
 
 Before opening a pull request:

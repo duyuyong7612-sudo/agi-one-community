@@ -56,7 +56,8 @@ success rate, low latency, full-duplex voice, batch execution, and advanced PPAV
 ## Quick Start
 
 ```bash
-cd open-source-edition
+git clone https://github.com/duyuyong7612-sudo/agi-one-community.git
+cd agi-one-community
 npm test
 npm run audit
 npm run demo
