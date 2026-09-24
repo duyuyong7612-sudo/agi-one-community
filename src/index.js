@@ -1,3 +1,6 @@
+import { realpathSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+
 import { CommunityPPAVController } from "./ppavCommunity.js";
 import { createTeachingPlanner } from "./planner.js";
 import { createConsoleDriver, LocalWorkspaceDriver } from "./tools.js";
@@ -16,7 +19,7 @@ export {
   toolSchemas
 };
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (process.argv[1] && realpathSync(fileURLToPath(import.meta.url)) === realpathSync(process.argv[1])) {
   const controller = new CommunityPPAVController({
     driver: createConsoleDriver(),
     planner: createTeachingPlanner()
